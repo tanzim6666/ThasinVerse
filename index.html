@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThasinVerse - Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/logo.png" alt="TSV Logo" class="nav-logo">
+                <span class="brand-name">ThasinVerse</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">হোম</a>
+                <a href="#classes" class="nav-link">ক্লাসসমূহ</a>
+                <a href="#about" class="nav-link">আমাদের সম্পর্কে</a>
+                <a href="#contact" class="nav-link">যোগাযোগ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">বিজ্ঞানকে সহজ ও <span class="highlight">মজার</span> সাথে শিখুন</h1>
+                <p class="hero-subtitle">Class 6 থেকে 12 পর্যন্ত সম্পূর্ণ গাইডলাইন</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToClasses()">ক্লাস শুরু করুন</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('classes').scrollIntoView({behavior: 'smooth'})">ভিডিও দেখুন</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-badge">
+                    <span class="badge-text">100% ফ্রি</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container" id="classes">
+        <div class="section-header">
+            <h2 class="section-title">আপনার ক্লাস নির্বাচন করুন</h2>
+            <p class="section-subtitle">নিচ থেকে আপনার শ্রেণি ও বিষয় নির্বাচন করুন</p>
+        </div>
+
+        <button class="back-btn" onclick="goBack()">
+            <span>&#8592;</span> পেছনে যান
+        </button>
+        
+        <div id="content"></div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <h2 class="section-title">কেন ThasinVerse?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#127919;</div>
+                    <h3>সহজ ব্যাখ্যা</h3>
+                    <p>জটিল বিষয়গুলো সহজ ভাষায়</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128249;</div>
+                    <h3>এইচডি ভিডিও</h3>
+                    <p>উচ্চমানের ভিডিও কোয়ালিটি</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128221;</div>
+                    <h3>সাজেশন</h3>
+                    <p>পরীক্ষার গুরুত্বপূর্ণ টিপস</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128171;</div>
+                    <h3>সম্পূর্ণ ফ্রি</h3>
+                    <p>১০০% বিনামূল্যে শিক্ষা</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="TSV" class="footer-logo">
+                <h3>ThasinVerse</h3>
+                <p>বিজ্ঞান শিক্ষাকে সহজ করা</p>
+            </div>
+            <div class="footer-links">
+                <h4>দ্রুত লিংক</h4>
+                <a href="#home">হোম</a>
+                <a href="#classes">ক্লাসসমূহ</a>
+                <a href="#about">আমাদের সম্পর্কে</a>
+            </div>
+            <div class="footer-contact">
+                <h4>যোগাযোগ</h4>
+                <a href="https://wa.me/8801701131181" target="_blank" class="contact-link">
+                    <i class="fab fa-whatsapp"></i> 01701-131181
+                </a>
+                <a href="https://www.facebook.com/photo/?fbid=122096233352927063&set=a.122096233388927063" target="_blank" class="contact-link">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2026 ThasinVerse. সর্বস্বত্ব সংরক্ষিত</p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-contact">
+        <a href="https://www.facebook.com/photo/?fbid=122096233352927063&set=a.122096233388927063" target="_blank" class="float-btn facebook-btn" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/8801701131181" target="_blank" class="float-btn whatsapp-btn" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="video-container">
+                <iframe id="youtubeFrame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
