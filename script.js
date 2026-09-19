@@ -1,6 +1,6 @@
 // ========================================
 // ThasinVerse - Education Data
-// Class 6-8 + SSC (9-10 Combined) + HSC (11-12 Combined)
+// সঠিক ভিডিও লিংক ও ক্যাটাগরি অনুযায়ী সাজানো
 // ========================================
 
 const educationData = {
@@ -13,22 +13,21 @@ const educationData = {
                 name: "বিজ্ঞান",
                 icon: "🔬",
                 videos: [
-                    { title: "আলোর ঘটনা : ষষ্ঠ শ্রেণী বিজ্ঞান অধ্যায় ৯ | Lecture 01", videoId: "ba2QQRdjl4s", duration: "27:46" },
-                    { title: "আলোর প্রতিফলন ও প্রতিসরণ | Lecture 02", videoId: "XrkGCqvZhcc", duration: "15:03" }
+                    { title: "আলোর ঘটনা : ষষ্ঠ শ্রেণী বিজ্ঞান অধ্যায় ৯ | Lecture 01", videoId: "qX2j73eeJUc", duration: "27:46" },
+                    { title: "💎 আলোর প্রতিফলন🔮 আলোর ঘটনা : ষষ্ঠ শ্রেণী বিজ্ঞান অধ্যায় ৯ | Lecture 02", videoId: "jwA1Gpve3eE", duration: "15:03" },
+                    { title: "আলোর প্রতিসরণ | আলোর ঘটনা : ষষ্ঠ শ্রেণী বিজ্ঞান অধ্যায় ৯ | Lecture 03", videoId: "sDnBbMbcZ1c", duration: "11:33" }
                 ]
             },
-            "math": { name: "গণিত", icon: "", videos: [] },
-            "bangla": { name: "বাংলা", icon: "📖", videos: [] }
+            "math": { name: "গণিত", icon: "🔢", videos: [] }
         }
     },
     "class7": {
         name: "সপ্তম শ্রেণি",
-        icon: "",
+        icon: "📗",
         type: "individual",
         subjects: {
-            "science": { name: "বিজ্ঞান", icon: "", videos: [] },
-            "math": { name: "গণিত", icon: "", videos: [] },
-            "bangla": { name: "বাংলা", icon: "", videos: [] }
+            "science": { name: "বিজ্ঞান", icon: "🔬", videos: [] },
+            "math": { name: "গণিত", icon: "🔢", videos: [] }
         }
     },
     "class8": {
@@ -36,14 +35,13 @@ const educationData = {
         icon: "📘",
         type: "individual",
         subjects: {
-            "science": { name: "বিজ্ঞান", icon: "", videos: [] },
-            "math": { name: "গণিত", icon: "", videos: [] },
-            "bangla": { name: "বাংলা", icon: "📖", videos: [] }
+            "science": { name: "বিজ্ঞান", icon: "🔬", videos: [] },
+            "math": { name: "গণিত", icon: "🔢", videos: [] }
         }
     },
     "ssc": {
         name: "SSC (নবম-দশম)",
-        icon: "",
+        icon: "🎓",
         type: "combined",
         classes: {
             "class9": {
@@ -54,19 +52,33 @@ const educationData = {
                         icon: "⚛️",
                         className: "নবম শ্রেণি",
                         videos: [
-                            { title: "কাজ, ক্ষমতা ও শক্তি Final shot!  | Oneshot", videoId: "GbkZK74Hq1M", duration: "1:30:10" },
-                            { title: "চলতড়িৎ সার্কিট সলভিং সিরিজ | Episode: 09", videoId: "qX2j73eeJUc", duration: "25:00" }
+                            { title: "🔹 ৭৬ cm পারদ = ১ atm কেন? | Atmospheric Pressure", videoId: "KtaCP4xhFrA", duration: "10:15" },
+                            { title: "ফিজিক্স ৭ অধ্যায়ের Final shot! 😳 | তরঙ্গ ও শব্দ Oneshot", videoId: "GbkZK74Hq1M", duration: "45:20" },
+                            { title: "কাজ, ক্ষমতা ও শক্তি Final shot! 😳 | Oneshot", videoId: "XrkGCqvZhcc", duration: "50:10" },
+                            { title: "স্থির বিদ্যুৎ Final shot! 😳 | Chapter 10 Oneshot", videoId: "ba2QQRdjl4s", duration: "1:30:10" },
+                            { title: "💭 বিভব পার্থক্য বুঝতে কষ্ট হয়? মাত্র ৫ মিনিটে 🕐", videoId: "km6IZuxZXyQ", duration: "05:00" }
                         ]
                     },
                     "chemistry": {
                         name: "রসায়ন",
-                        icon: "",
+                        icon: "🧪",
                         className: "নবম শ্রেণি",
                         videos: [
-                            { title: "বোহারের ফর্মুলা mvr = nh/2π", videoId: "ba2QQRdjl4s", duration: "14:34" }
+                            { title: "বোহারের ফর্মুলা mvr = nh/2π কীভাবে এলো?", videoId: "SGTDSkbarSk", duration: "14:34" },
+                            { title: "১ মোল আসলে কত? | অ্যাভোগাড্রোর সংখ্যা সহজ ব্যাখ্যা", videoId: "Q8nRvIInk-4", duration: "12:20" }
                         ]
                     },
-                    "math": { name: "উচ্চতর গণিত", icon: "", className: "নবম শ্রেণি", videos: [] },
+                    "higher_math": {
+                        name: "উচ্চতর গণিত",
+                        icon: "📐",
+                        className: "নবম শ্রেণি",
+                        videos: [
+                            { title: "🔍 অসীম সংখ্যা কি আসলেই অসীম?", videoId: "P07K4MigUXk", duration: "18:30" },
+                            { title: "📘 SSC Math: অসীম সংখ্যা শেষবারের মতো ক্লিয়ার করো!", videoId: "bgMRUmhwRyI", duration: "22:15" },
+                            { title: "বৈজ্ঞানিক পদ্ধতিতে সংখ্যার প্রকাশ | সহজ ব্যাখ্যা", videoId: "aafAMZiQGkQ", duration: "15:45" }
+                        ]
+                    },
+                    "general_math": { name: "সাধারণ গণিত", icon: "🔢", className: "নবম শ্রেণি", videos: [] },
                     "biology": { name: "জীববিজ্ঞান", icon: "🧬", className: "নবম শ্রেণি", videos: [] }
                 }
             },
@@ -75,8 +87,9 @@ const educationData = {
                 subjects: {
                     "physics": { name: "পদার্থবিজ্ঞান", icon: "⚛️", className: "দশম শ্রেণি", videos: [] },
                     "chemistry": { name: "রসায়ন", icon: "🧪", className: "দশম শ্রেণি", videos: [] },
-                    "math": { name: "উচ্চতর গণিত", icon: "📐", className: "দশম শ্রেণি", videos: [] },
-                    "biology": { name: "জীববিজ্ঞান", icon: "", className: "দশম শ্রেণি", videos: [] }
+                    "higher_math": { name: "উচ্চতর গণিত", icon: "📐", className: "দশম শ্রেণি", videos: [] },
+                    "general_math": { name: "সাধারণ গণিত", icon: "🔢", className: "দশম শ্রেণি", videos: [] },
+                    "biology": { name: "জীববিজ্ঞান", icon: "🧬", className: "দশম শ্রেণি", videos: [] }
                 }
             }
         }
@@ -89,18 +102,52 @@ const educationData = {
             "class11": {
                 name: "একাদশ শ্রেণি",
                 subjects: {
-                    "physics": { name: "পদার্থবিজ্ঞান", icon: "️", className: "একাদশ শ্রেণি", videos: [] },
-                    "chemistry": { name: "রসায়ন", icon: "🧪", className: "একাদশ শ্রেণি", videos: [] },
-                    "math": { name: "উচ্চতর গণিত", icon: "", className: "একাদশ শ্রেণি", videos: [] },
-                    "biology": { name: "জীববিজ্ঞান", icon: "🧬", className: "একাদশ শ্রেণি", videos: [] }
+                    "physics": {
+                        name: "পদার্থবিজ্ঞান",
+                        icon: "⚛️",
+                        className: "একাদশ শ্রেণি",
+                        videos: [
+                            { title: "💭 বিভব পার্থক্য বুঝতে কষ্ট হয়? মাত্র ৫ মিনিটে 🕐", videoId: "km6IZuxZXyQ", duration: "05:00" },
+                            { title: "🔹 ৭৬ cm পারদ = ১ atm কেন? | Atmospheric Pressure", videoId: "KtaCP4xhFrA", duration: "10:15" }
+                        ]
+                    },
+                    "chemistry": {
+                        name: "রসায়ন",
+                        icon: "🧪",
+                        className: "একাদশ শ্রেণি",
+                        videos: [
+                            { title: "বোহারের ফর্মুলা mvr = nh/2π কীভাবে এলো?", videoId: "SGTDSkbarSk", duration: "14:34" },
+                            { title: "১ মোল আসলে কত? | অ্যাভোগাড্রোর সংখ্যা সহজ ব্যাখ্যা", videoId: "Q8nRvIInk-4", duration: "12:20" }
+                        ]
+                    },
+                    "higher_math": {
+                        name: "উচ্চতর গণিত",
+                        icon: "📐",
+                        className: "একাদশ শ্রেণি",
+                        videos: [
+                            { title: "Matrix ও Determinant-এর গুণ একবারেই পরিষ্কার", videoId: "RjN7vuQLQAA", duration: "20:10" },
+                            { title: "দুইটি সরলরেখার মধ্যবর্তী কোণ নির্ণয় | Easy Explanation", videoId: "m-3a_Gs56SE", duration: "18:45" },
+                            { title: "🔍 অসীম সংখ্যা কি আসলেই অসীম?", videoId: "P07K4MigUXk", duration: "18:30" },
+                            { title: "📘 HSC Math: অসীম সংখ্যা শেষবারের মতো ক্লিয়ার করো!", videoId: "bgMRUmhwRyI", duration: "22:15" },
+                            { title: "বৈজ্ঞানিক পদ্ধতিতে সংখ্যার প্রকাশ | সহজ ব্যাখ্যা", videoId: "aafAMZiQGkQ", duration: "15:45" }
+                        ]
+                    },
+                    "biology": {
+                        name: "জীববিজ্ঞান",
+                        icon: "🧬",
+                        className: "একাদশ শ্রেণি",
+                        videos: [
+                            { title: "HSC 2027 Translation | mRNA থেকে Protein কীভাবে তৈরি হয়?", videoId: "wX-LK8ou0W8", duration: "25:30" }
+                        ]
+                    }
                 }
             },
             "class12": {
                 name: "দ্বাদশ শ্রেণি",
                 subjects: {
                     "physics": { name: "পদার্থবিজ্ঞান", icon: "⚛️", className: "দ্বাদশ শ্রেণি", videos: [] },
-                    "chemistry": { name: "রসায়ন", icon: "", className: "দ্বাদশ শ্রেণি", videos: [] },
-                    "math": { name: "উচ্চতর গণিত", icon: "📐", className: "দ্বাদশ শ্রেণি", videos: [] },
+                    "chemistry": { name: "রসায়ন", icon: "🧪", className: "দ্বাদশ শ্রেণি", videos: [] },
+                    "higher_math": { name: "উচ্চতর গণিত", icon: "📐", className: "দ্বাদশ শ্রেণি", videos: [] },
                     "biology": { name: "জীববিজ্ঞান", icon: "🧬", className: "দ্বাদশ শ্রেণি", videos: [] }
                 }
             }
@@ -158,8 +205,6 @@ function showCombinedVideos(groupKey) {
     document.querySelector('.back-btn').style.display = 'inline-block';
     
     let groupData = educationData[groupKey];
-    
-    // Combine all subjects from both classes
     let combinedSubjects = {};
     
     for (let classKey in groupData.classes) {
@@ -176,7 +221,6 @@ function showCombinedVideos(groupKey) {
                 };
             }
             
-            // Add videos with class name
             subject.videos.forEach(video => {
                 combinedSubjects[subjKey].videos.push({
                     ...video,
@@ -220,7 +264,6 @@ function showCombinedSubjectVideos(groupKey, subjectKey) {
     let subjectName = '';
     let subjectIcon = '';
     
-    // Collect all videos for this subject from both classes
     for (let classKey in groupData.classes) {
         let classData = groupData.classes[classKey];
         if (classData.subjects[subjectKey]) {
@@ -239,7 +282,7 @@ function showCombinedSubjectVideos(groupKey, subjectKey) {
     
     let html = `
         <div class="section-header">
-            <h2 class="section-title">${subjectName} - সকল শ্রেণি</h2>
+            <h2 class="section-title">${subjectName}</h2>
             <p class="section-subtitle">ভিডিওতে ক্লিক করে দেখুন</p>
         </div>
         <div class="video-grid">
@@ -248,7 +291,7 @@ function showCombinedSubjectVideos(groupKey, subjectKey) {
     if (subjectVideos.length === 0) {
         html += `
             <div style="grid-column: 1/-1; text-align: center; padding: 60px; background: white; border-radius: 12px; border: 2px dashed #0056D2;">
-                <div style="font-size: 4em; margin-bottom: 20px;"></div>
+                <div style="font-size: 4em; margin-bottom: 20px;">🎬</div>
                 <h3 style="color: #111; margin-bottom: 10px;">শীঘ্রই আসছে</h3>
                 <p style="color: #555;">খুব শীঘ্রই এই বিষয়ে ভিডিও যুক্ত করা হবে</p>
             </div>
@@ -264,8 +307,8 @@ function showCombinedSubjectVideos(groupKey, subjectKey) {
                     <div class="video-info">
                         <div class="video-title">${index + 1}. ${video.title}</div>
                         <div class="video-meta">
-                            <span>️ ${video.duration}</span>
-                            <span> | ${video.className}</span>
+                            <span>⏱️ ${video.duration}</span>
+                            <span> | 📚 ${video.className}</span>
                         </div>
                     </div>
                 </div>
@@ -325,7 +368,7 @@ function showIndividualVideos(className, subjectName) {
     if (subject.videos.length === 0) {
         html += `
             <div style="grid-column: 1/-1; text-align: center; padding: 60px; background: white; border-radius: 12px; border: 2px dashed #0056D2;">
-                <div style="font-size: 4em; margin-bottom: 20px;"></div>
+                <div style="font-size: 4em; margin-bottom: 20px;">🎬</div>
                 <h3 style="color: #111; margin-bottom: 10px;">শীঘ্রই আসছে</h3>
                 <p style="color: #555;">খুব শীঘ্রই এই বিষয়ে ভিডিও যুক্ত করা হবে</p>
             </div>
