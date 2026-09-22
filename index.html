@@ -3,132 +3,938 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThasinVerse - Premium Learning Platform</title>
+
+    <title>ThasinVerse | Premium Science Learning Platform</title>
+
+    <meta name="description"
+          content="ThasinVerse - Premium Science Learning Platform. SSC, HSC এবং স্কুল শিক্ষার্থীদের জন্য সহজ ও আধুনিক বিজ্ঞান শিক্ষা।">
+
+    <meta name="theme-color" content="#050816">
+
+    <link rel="icon" href="assets/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Fixed Social Media Sidebar (Desktop Only) -->
-    <div class="social-sidebar">
-        <a href="https://www.facebook.com/profile.php?id=61577811897349" target="_blank" class="social-icon fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/@ThasinVerse" target="_blank" class="social-icon yt" title="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/richard_feynman_tz?stkn=bWZicjE4aGJ4d2Rt" target="_blank" class="social-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/8801701131181" target="_blank" class="social-icon wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:thasinzaman21@gmail.com" class="social-icon em" title="Email"><i class="fas fa-envelope"></i></a>
-    </div>
+<!-- =========================================================
+     BACKGROUND SYSTEM
+========================================================= -->
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="assets/logo.png" alt="TSV Logo" class="nav-logo">
-                <span class="brand-name">ThasinVerse</span>
+<div class="ambient-background">
+
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+    <div class="aurora aurora-three"></div>
+
+    <div class="grid-floor"></div>
+
+    <div class="floating-orb orb-one"></div>
+    <div class="floating-orb orb-two"></div>
+    <div class="floating-orb orb-three"></div>
+
+</div>
+
+
+<!-- =========================================================
+     TOP PROGRESS BAR
+========================================================= -->
+
+<div id="scrollProgress"></div>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home"
+           class="brand sound-btn"
+           data-sound="soft">
+
+            <div class="brand-logo-wrap">
+
+                <img src="assets/logo.png"
+                     alt="ThasinVerse Logo"
+                     class="brand-logo">
+
             </div>
-            <div class="nav-links">
-                <a href="#home" class="nav-link active">হোম</a>
-                <a href="#classes" class="nav-link">ক্লাসসমূহ</a>
-                <a href="#founder" class="nav-link">আমাদের সম্পর্কে</a>
-                <a href="#contact" class="nav-link">যোগাযোগ</a>
+
+            <div class="brand-text">
+
+                <strong>ThasinVerse</strong>
+
+                <span>SCIENCE • LEARNING • FUTURE</span>
+
             </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <span class="hero-badge-top">🚀 বাংলাদেশের সেরা অনলাইন লার্নিং প্ল্যাটফর্ম</span>
-                <h1 class="hero-title">বিজ্ঞানকে সহজ ও <span class="highlight">মজার</span> সাথে শিখুন</h1>
-                <p class="hero-subtitle">Class 6 থেকে HSC পর্যন্ত সম্পূর্ণ গাইডলাইন। পদার্থবিজ্ঞান, রসায়ন, গণিত ও জীববিজ্ঞান এখন আপনার হাতের মুঠোয়।</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="scrollToClasses()">🎓 ক্লাস শুরু করুন</button>
-                    <button class="btn btn-secondary" onclick="document.getElementById('classes').scrollIntoView({behavior: 'smooth'})">🎬 ভিডিও দেখুন</button>
-                </div>
-            </div>
-        </div>
-    </section>
+        </a>
 
-    <!-- Main Content Container -->
-    <div class="container" id="classes">
-        <div class="section-header">
-            <h2 class="section-title">আপনার ক্লাস নির্বাচন করুন</h2>
-            <p class="section-subtitle">নিচ থেকে আপনার শ্রেণি ও বিষয় নির্বাচন করে ভিডিও লেকচার দেখুন</p>
+
+        <nav class="nav-links">
+
+            <a href="#home"
+               class="nav-link active sound-btn"
+               data-sound="soft">
+                Home
+            </a>
+
+            <a href="#classes"
+               class="nav-link sound-btn"
+               data-sound="soft">
+                Classes
+            </a>
+
+            <a href="#about"
+               class="nav-link sound-btn"
+               data-sound="soft">
+                About
+            </a>
+
+            <a href="https://tanzim6666.github.io/MD-Thasin-Zaman/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="nav-link about-nav sound-btn"
+               data-sound="success">
+                <i class="fa-solid fa-user-astronaut"></i>
+                About Me
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button id="soundToggle"
+                    class="sound-control sound-btn"
+                    type="button"
+                    aria-label="Toggle sound">
+
+                <i class="fa-solid fa-volume-high"></i>
+
+                <span>Sound</span>
+
+            </button>
+
+
+            <a href="https://www.youtube.com/@ThasinVerse71"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="youtube-nav sound-btn"
+               data-sound="success">
+
+                <i class="fa-brands fa-youtube"></i>
+
+                <span>YouTube</span>
+
+            </a>
+
         </div>
 
-        <button class="back-btn" onclick="goBack()">
-            <i class="fas fa-arrow-left"></i> পেছনে যান
+
+        <button class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open Menu">
+
+            <i class="fa-solid fa-bars"></i>
+
         </button>
-        
-        <div id="content"></div>
+
     </div>
 
-    <!-- Founder / CEO Section -->
-    <section class="founder-section" id="founder">
-        <div class="container">
-            <div class="founder-card">
-                <div class="founder-image-wrapper">
-                    <img src="assets/logo2.png" alt="MD Thasin Zaman - CEO" class="founder-img">
-                    <div class="founder-badge">CEO & Founder</div>
-                </div>
-                <div class="founder-info">
-                    <h3>MD Thasin Zaman</h3>
-                    <span class="founder-role">প্রতিষ্ঠাতা ও প্রধান নির্বাহী, ThasinVerse</span>
-                    <p class="founder-bio">
-                        "বিজ্ঞান শিক্ষাকে সহজ, সাবলীল ও আনন্দদায়ক করে তোলাই আমার একমাত্র লক্ষ্য। ThasinVerse-এর মাধ্যমে আমি প্রতিটি শিক্ষার্থীর স্বপ্ন পূরণের পথে একজন বিশ্বস্ত সঙ্গী হতে চাই। আমাদের প্রতিটি ভিডিও তৈরি করা হয়েছে আপনার সাফল্যের কথা মাথায় রেখে।"
-                    </p>
-                    <div class="founder-socials">
-                        <a href="https://www.facebook.com/profile.php?id=61577811897349" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.youtube.com/@ThasinVerse" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/richard_feynman_tz?stkn=bWZicjE4aGJ4d2Rt" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</header>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <img src="assets/logo.png" alt="TSV" class="footer-logo">
-                <h3>ThasinVerse</h3>
-                <p>বিজ্ঞান শিক্ষাকে সহজ ও সাবলীল করে তোলাই আমাদের লক্ষ্য।</p>
-            </div>
-            <div class="footer-links">
-                <h4>দ্রুত লিংক</h4>
-                <a href="#home">হোম</a>
-                <a href="#classes">ক্লাসসমূহ</a>
-                <a href="#founder">আমাদের সম্পর্কে</a>
-            </div>
-            <div class="footer-contact">
-                <h4>যোগাযোগ</h4>
-                <a href="https://wa.me/8801701131181" class="contact-item"><i class="fab fa-whatsapp"></i> +880 1701-131181</a>
-                <a href="mailto:thasinzaman21@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> thasinzaman21@gmail.com</a>
-                <a href="https://www.facebook.com/profile.php?id=61577811897349" class="contact-item"><i class="fab fa-facebook"></i> Facebook Page</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 ThasinVerse. সর্বস্বত্ব সংরক্ষিত | MD Thasin Zaman</p>
-        </div>
-    </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/8801701131181" target="_blank" class="floating-wa">
-        <i class="fab fa-whatsapp"></i>
+<!-- =========================================================
+     MOBILE MENU
+========================================================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="#home" class="sound-btn">Home</a>
+
+    <a href="#classes" class="sound-btn">Classes</a>
+
+    <a href="#about" class="sound-btn">About</a>
+
+    <a href="https://tanzim6666.github.io/MD-Thasin-Zaman/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="sound-btn">
+        About Me
     </a>
 
-    <!-- Video Modal -->
-    <div class="modal" id="videoModal">
-        <span class="close-modal" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-            <div class="video-container">
-                <iframe id="youtubeFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <a href="https://www.youtube.com/@ThasinVerse71"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="sound-btn">
+        YouTube Channel
+    </a>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main id="home">
+
+<section class="hero-section">
+
+    <div class="hero-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="hero-content reveal">
+
+            <div class="hero-badge">
+
+                <span class="badge-dot"></span>
+
+                PREMIUM SCIENCE LEARNING PLATFORM
+
+                <i class="fa-solid fa-sparkles"></i>
+
             </div>
+
+
+            <h1>
+
+                শেখা হোক
+
+                <span class="gradient-text">
+                    সহজ,
+                </span>
+
+                <br>
+
+                <span class="gradient-text">
+                    আধুনিক
+                </span>
+
+                ও
+
+                <span class="outline-text">
+                    শক্তিশালী
+                </span>
+
+                ।
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                ThasinVerse হলো এমন একটি learning platform,
+                যেখানে বিজ্ঞান ও গণিতের কঠিন বিষয়গুলোকে
+                সহজ, visual এবং concept-based উপায়ে শেখানো হয়।
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <button onclick="openClasses()"
+                        class="premium-button primary-button sound-btn"
+                        data-sound="success">
+
+                    <span class="button-icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </span>
+
+                    <span>শেখা শুরু করুন</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <a href="https://tanzim6666.github.io/MD-Thasin-Zaman/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="premium-button about-button sound-btn"
+                   data-sound="success">
+
+                    <span class="button-icon">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </span>
+
+                    <span>About Me</span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-mini-stats">
+
+                <div class="mini-stat">
+
+                    <strong>10,000+</strong>
+
+                    <span>Students Helped</span>
+
+                </div>
+
+
+                <div class="mini-divider"></div>
+
+
+                <div class="mini-stat">
+
+                    <strong>50+</strong>
+
+                    <span>Learning Videos</span>
+
+                </div>
+
+
+                <div class="mini-divider"></div>
+
+
+                <div class="mini-stat">
+
+                    <strong>24/7</strong>
+
+                    <span>Learning Mindset</span>
+
+                </div>
+
+            </div>
+
         </div>
+
+
+        <!-- RIGHT SIDE 3D LOGO -->
+
+        <div class="hero-visual reveal">
+
+            <div class="hero-orbit orbit-a"></div>
+
+            <div class="hero-orbit orbit-b"></div>
+
+            <div class="hero-orbit orbit-c"></div>
+
+
+            <div class="logo-stage">
+
+                <div class="logo-glow"></div>
+
+                <div class="logo-shadow"></div>
+
+
+                <div class="logo-card">
+
+                    <div class="logo-reflection"></div>
+
+                    <img src="assets/logo.png"
+                         alt="TSV ThasinVerse 3D Logo"
+                         class="hero-logo">
+
+                    <div class="logo-card-text">
+
+                        <span>TSV</span>
+
+                        <small>THASINVERSE</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-chip chip-one">
+
+                    <i class="fa-solid fa-atom"></i>
+
+                    <span>SCIENCE</span>
+
+                </div>
+
+
+                <div class="floating-chip chip-two">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    <span>CONCEPT</span>
+
+                </div>
+
+
+                <div class="floating-chip chip-three">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>LEARNING</span>
+
+                </div>
+
+
+                <div class="floating-chip chip-four">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>FUTURE</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- SVG DECORATION -->
+
+            <svg class="hero-svg"
+                 viewBox="0 0 600 600"
+                 aria-hidden="true">
+
+                <circle cx="300"
+                        cy="300"
+                        r="230"
+                        fill="none"
+                        stroke="rgba(99,102,241,.35)"
+                        stroke-width="1"
+                        stroke-dasharray="5 12"/>
+
+                <circle cx="300"
+                        cy="300"
+                        r="185"
+                        fill="none"
+                        stroke="rgba(56,189,248,.28)"
+                        stroke-width="1"
+                        stroke-dasharray="2 16"/>
+
+                <path d="M100 300 C180 80 420 80 500 300"
+                      fill="none"
+                      stroke="rgba(139,92,246,.35)"
+                      stroke-width="2"/>
+
+                <path d="M100 300 C180 520 420 520 500 300"
+                      fill="none"
+                      stroke="rgba(56,189,248,.35)"
+                      stroke-width="2"/>
+
+            </svg>
+
+        </div>
+
     </div>
 
-    <script src="script.js"></script>
+</section>
+
+
+<!-- =========================================================
+     TRUST / STATS
+========================================================= -->
+
+<section class="stats-section">
+
+    <div class="section-container">
+
+        <div class="stats-grid">
+
+
+            <div class="stat-card reveal">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div class="stat-info">
+
+                    <strong data-counter="10000">0</strong>
+
+                    <span>+</span>
+
+                    <p>Students Helped</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card reveal">
+
+                <div class="stat-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+
+                <div class="stat-info">
+
+                    <strong data-counter="50">0</strong>
+
+                    <span>+</span>
+
+                    <p>Learning Videos</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card reveal">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div class="stat-info">
+
+                    <strong>SSC</strong>
+
+                    <p>Academic Classes</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card reveal">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="stat-info">
+
+                    <strong>HSC</strong>
+
+                    <p>Advanced Learning</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CLASSES
+========================================================= -->
+
+<section id="classes"
+         class="classes-section">
+
+    <div class="section-container">
+
+
+        <div class="section-heading reveal">
+
+            <div class="section-kicker">
+
+                <span></span>
+
+                LEARNING HUB
+
+                <span></span>
+
+            </div>
+
+
+            <h2>
+
+                তোমার
+
+                <span class="gradient-text">
+                    Class
+                </span>
+
+                বেছে নাও
+
+            </h2>
+
+
+            <p>
+
+                Class 6–8 এ Subject Select করে শেখা শুরু করো।
+                SSC ও HSC-তে সরাসরি subject অনুযায়ী ভিডিও দেখতে পারবে।
+
+            </p>
+
+        </div>
+
+
+        <!-- Dynamic content -->
+
+        <div id="classContent"
+             class="class-content">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT / FOUNDER
+========================================================= -->
+
+<section id="about"
+         class="about-section">
+
+    <div class="section-container">
+
+
+        <div class="founder-card reveal">
+
+
+            <div class="founder-image-area">
+
+                <div class="founder-ring ring-one"></div>
+                <div class="founder-ring ring-two"></div>
+                <div class="founder-ring ring-three"></div>
+
+
+                <div class="founder-image-frame">
+
+                    <img src="assets/logo2.png"
+                         alt="MD Thasin Zaman">
+
+                </div>
+
+            </div>
+
+
+            <div class="founder-content">
+
+                <div class="section-kicker left">
+
+                    <span></span>
+
+                    THE PERSON BEHIND THASINVERSE
+
+                </div>
+
+
+                <h2>
+
+                    MD Thasin
+
+                    <span class="gradient-text">
+                        Zaman
+                    </span>
+
+                </h2>
+
+
+                <h3>
+                    Founder & Chief Executive of ThasinVerse
+                </h3>
+
+
+                <p>
+
+                    ThasinVerse-এর লক্ষ্য হলো শিক্ষার্থীদের কাছে
+                    কঠিন academic concept-গুলোকে সহজ, visual,
+                    practical এবং modern learning experience-এর
+                    মাধ্যমে উপস্থাপন করা।
+
+                </p>
+
+
+                <div class="founder-tags">
+
+                    <span>
+                        <i class="fa-solid fa-atom"></i>
+                        Science
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-code"></i>
+                        Technology
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Innovation
+                    </span>
+
+                </div>
+
+
+                <a href="https://tanzim6666.github.io/MD-Thasin-Zaman/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="premium-button about-button sound-btn"
+                   data-sound="success">
+
+                    <i class="fa-solid fa-user-astronaut"></i>
+
+                    Visit My Full Profile
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta-section">
+
+    <div class="cta-container reveal">
+
+        <div class="cta-glow"></div>
+
+
+        <div class="cta-icon">
+
+            <i class="fa-solid fa-atom"></i>
+
+        </div>
+
+
+        <h2>
+
+            Science-কে
+
+            <span class="gradient-text">
+                ভয় নয়,
+            </span>
+
+            বুঝে শেখো।
+
+        </h2>
+
+
+        <p>
+
+            তোমার learning journey আজ থেকেই শুরু হোক।
+
+        </p>
+
+
+        <div class="cta-buttons">
+
+            <button onclick="openClasses()"
+                    class="premium-button primary-button sound-btn"
+                    data-sound="success">
+
+                <i class="fa-solid fa-play"></i>
+
+                Explore Classes
+
+            </button>
+
+
+            <a href="https://www.youtube.com/@ThasinVerse71"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="premium-button youtube-button sound-btn"
+               data-sound="success">
+
+                <i class="fa-brands fa-youtube"></i>
+
+                Visit YouTube
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <img src="assets/logo.png"
+                 alt="ThasinVerse Logo">
+
+            <div>
+
+                <strong>ThasinVerse</strong>
+
+                <span>
+                    Learn. Understand. Transform.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-socials">
+
+            <a href="https://www.facebook.com/profile.php?id=61577811897349"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="sound-btn">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+
+            <a href="https://www.youtube.com/@ThasinVerse71"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="sound-btn">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+
+            <a href="https://www.instagram.com/richard_feynman_tz"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="sound-btn">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+
+            <a href="https://wa.me/8801701131181"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="sound-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+
+            <a href="mailto:thasinzaman21@gmail.com"
+               class="sound-btn">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                ThasinVerse. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed with
+                <i class="fa-solid fa-heart"></i>
+                for learners.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     VIDEO MODAL
+========================================================= -->
+
+<div id="videoModal"
+     class="video-modal">
+
+    <div class="video-modal-overlay"
+         onclick="closeVideoModal()">
+    </div>
+
+
+    <div class="video-modal-box">
+
+        <button class="modal-close"
+                onclick="closeVideoModal()"
+                aria-label="Close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="video-container">
+
+            <iframe id="youtubeFrame"
+                    src=""
+                    title="ThasinVerse YouTube Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button id="backToTop"
+        class="back-to-top sound-btn"
+        aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- =========================================================
+     FLOATING YOUTUBE
+========================================================= -->
+
+<a href="https://www.youtube.com/@ThasinVerse71"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="floating-youtube sound-btn"
+   data-sound="success">
+
+    <i class="fa-brands fa-youtube"></i>
+
+    <span>ThasinVerse</span>
+
+</a>
+
+
+<!-- =========================================================
+     MAIN JS
+========================================================= -->
+
+<script src="script.js"></script>
+
 </body>
 </html>
